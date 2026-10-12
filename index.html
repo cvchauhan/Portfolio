@@ -27,6 +27,16 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Chirag Chauhan","url":"https://chiragchauhan.co.in/","jobTitle":"Full-stack developer","image":"https://chiragchauhan.co.in/chirag-chauhan.png","knowsAbout":["Angular","Node.js","TypeScript","React","SQL Server","PostgreSQL"],"sameAs":["https://github.com/cvchauhan","https://www.linkedin.com/in/chiragvchauhan/","https://www.upwork.com/freelancers/~0127565d4749e1d305"]}</script>
   </head>
   <body>
+    <!-- Static schema for Netlify form detection, outside the React hydration root. -->
+    <form name="project-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="project-inquiry" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input type="email" name="email" />
+      <input name="service" />
+      <input name="budget" />
+      <textarea name="details"></textarea>
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
